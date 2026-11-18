@@ -58,11 +58,10 @@
 				<div class="container">
 					<h1 class="display-4 font-cabin text-center font-weight-bold">Computation, Language, and
 						Meaning<br />Band of Researchers</h1>
-					<p class="lead pt-4">What do all of the languages of the world have in common? Why and how did these
-						linguistic universals arise? What do they tell us about human cognition and how can we harness
-						them to build better language technologies?</p>
-					<p>At CLMBR, we address these and related questions from a computational and experimental
-						perspective. We are a lab hosted at the <a
+					<p class="lead pt-4">Why do the world's languages look the way they do? Which properties of meaning
+						and grammar are shared across languages?  Which of these properties arise from more general cognitive and communicative pressures?  How can non-human systems, from animal communication to carefully trained language models, help us understand what is and is not unique to human language and thought? </p>
+					<p>At CLMBR, we tackle these questions with computational modeling, machine learning, and
+						experiments, drawing on linguistics, cognitive science, philosophy, and NLP. We are a lab hosted at the <a
 							href="https://linguistics.washington.edu/">Linguistics Department</a> of the University of
 						Washington, as part of the larger <a href="https://depts.washington.edu/uwcl/">Treehouse</a>
 						computational linguistics lab.</p>
@@ -234,20 +233,42 @@
 					</div>
 					<div class="col-md-6 mr-auto">
 						<h3>Semantic Universals</h3>
-						<p>A major line of recent work has involved explaining <em>semantic universals</em>: shared
-							properties of meaning across all natural languages. We have been using machine learning to
-							argue that the languages of the world express meanings that are <em>easier to learn</em>.
-							Ongoing work extends this approach to more linguistic domains, compares it to other
-							candidate explanations, and integrates learnability with models of language
-							change/evolution.</p>
+						<p>Why do languages carve up meaning in the ways that they do? We explain these <em>semantic universals</em> in many linguistic domainsby
+							appeal to two more general pressures: <em>ease of learning</em> and <em>efficient communication</em>. We also build open tools,
+							such as the <a href="https://doi.org/10.7275/scil.3144">Unnatural Language ToolKit</a>,
+							that make this kind of analysis easier to carry out across domains.</p>
 						<p>Representative papers:</p>
 						<ul>
-							<li><a href="https://doi.org/10.1016/j.cognition.2019.104076">Ease of Learning Explains
-									Semantic Universals</a></li>
-							<li><a href="https://doi.org/10.3390/e23101335">Quantifiers in Natural Language: Efficient
-									Communication and Degrees of Semantic Universals</a></li>
-							<li><a href="http://dx.doi.org/10.3765/sp.12.4">Learnability and Semantic Universals</a>
-							</li>
+							<li><a href="https://arxiv.org/abs/2611.15804">Computational Explanations of Semantic
+									Universals</a></li>
+							<li><a href="https://doi.org/10.1162/OPMI.a.313">An Efficient Communication Analysis of
+									Modal Typology</a></li>
+							<li><a href="https://doi.org/10.3765/6qa95941">Quantifiers That Are More Monotone Are
+									Easier to Learn</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="row mt-5">
+					<div class="col-md-3 ml-auto">
+						<img src="images/fict.png" width="100%" />
+					</div>
+					<div class="col-md-6 mr-auto">
+						<h3>Language Models as Model Learners</h3>
+						<p>We train language models from scratch on carefully filtered or synthetic corpora, as
+							controlled experiments on learning. This lets us ask what can be learned without direct
+							evidence in the input, and whether these learners share the inductive biases of human
+							learners and reflect cross-linguistic (typological) tendencies&mdash;as well as where they
+							diverge from them. We also look inside these models, using probing and causal
+							interventions to understand the representations and mechanisms that drive their
+							generalizations. </p>
+						<p>Representative papers:</p>
+						<ul>
+							<li><a href="https://doi.org/10.1162/tacl_a_00720">Filtered Corpus Training (FiCT) Shows
+									that Language Models can Generalize from Indirect Evidence</a></li>
+							<li><a href="https://aclanthology.org/2026.conll-main.16/">Differences in Typological
+									Alignment in Language Models' Treatment of Differential Argument Marking</a></li>
+							<li><a href="https://arxiv.org/abs/2608.05028v1">Language Models Generalize to Human-like
+									Word Order Preferences</a></li>
 						</ul>
 					</div>
 				</div>
@@ -256,47 +277,21 @@
 						<img src="images/emecom.png" width="100%" />
 					</div>
 					<div class="col-md-6 mr-auto">
-						<h3>Emergent Communication</h3>
-						<p>By placing artificial agents in simulated environments, we can use reinforcement learning to
-							study the emergence of fundamental features of human language. A particular focus has been
-							on <em>non-trivial compositionality</em>: rudimentary forms of hierarchical structure that
-							exhibit one linguistic item modifying another, as in non-intersective adjectives. This
-							research line has both theoretical and practical interest, since autonomous agents such as
-							vehicles may benefit from learning their own communication system.</p>
+						<h3>Origins of Communication</h3>
+						<p>Where do the core features of language come from? With collaborators in animal
+							linguistics, we use tools from formal semantics and pragmatics to analyze what primate and
+							bird calls mean, and to reconstruct what ancestral call systems might have meant. With
+							artificial agents and simulated populations, we study how discrete, compositional, and
+							efficient signals can emerge from interaction and from transmission across
+							generations.</p>
 						<p>Representative papers:</p>
 						<ul>
-							<li><a href="https://openreview.net/forum?id=SUqrM7WR7W5">Emergent Communication Fine-tuning
-									(EC-FT) for Pretrained Language Models</a></li>
-							<li><a href="https://www.aclweb.org/anthology/2020.acl-main.433/">On the Spontaneous
-									Emergence of Discrete and Compositional Singals</a></li>
 							<li><a href="https://doi.org/10.1086/710628">Towards the Emergence of Non-trivial
 									Compositionality</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="row mt-5">
-					<div class="col-md-3 ml-auto">
-						<img src="images/RAM.jpeg" width="100%" />
-					</div>
-					<div class="col-md-6 mr-auto">
-						<h3>Cognitive Science and NLP</h3>
-						<p>We also conduct studies investigating the cognitive underpinnings of language understanding.
-							How do speakers represent meanings internally and how do these representations interface
-							with other cognitive modules?</p>
-						<p>Moreover, as natural language processing tools become increasingly more powerful, we believe
-							that two-way interaction between cognitive science and NLP will be increasingly important.
-							On the one hand: insights from human language understanding can help us analyze, understand,
-							and build better machines. On the other hand: increasing sophistication in modeling from NLP
-							can provide inspiration and insights in modeling human behavior. Our lab has ongoing
-							projects in both directions.</p>
-						<p>Representative papers:</p>
-						<ul>
-							<li><a href="http://dx.doi.org/10.18653/v1/2021.findings-acl.439">Language Models Use
-									Monotonicity to Assess NPI Licensing</a></li>
-							<li><a href="https://aclanthology.org/2020.blackboxnlp-1.12/">Linguistically-Informed
-									Transformations (LIT): A Method for Automatically Generating Contrast Sets</a></li>
-							<li><a href="https://www.aclweb.org/anthology/W19-2916/">Neural Models of the
-									Psychosemantics of &quot;Most&quot;</a></li>
+							<li><a href="https://doi.org/10.1007/s10988-025-09438-8">Ancestral Meanings: A Prelude to
+									Evolutionary Animal Linguistics</a></li>
+							<li><a href="https://doi.org/10.1111/mila.12529">Anti-Babel: Three Degrees of
+									Interspecies Comprehension</a></li>
 						</ul>
 					</div>
 				</div>
